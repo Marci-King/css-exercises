@@ -34,9 +34,11 @@ input {
 .header .footer {
   display: flex;
   justify-content: space-between;
+  padding: 16px;
 }
 
 .footer {
+  background-color: #eeeeee;
 }
 
 .content {
