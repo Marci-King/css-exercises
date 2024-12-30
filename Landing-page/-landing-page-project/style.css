@@ -275,10 +275,12 @@ header nav ul li a {
 ========================== */
 /* Footer styles */
 #footer {
-  background: #1f2937;
+  background: #d1dff6;
   color: white;
   text-align: center;
   padding: 20px;
+  display: flex;
+  justify-content: center;
 }
 
 /* ==========================
