@@ -83,7 +83,7 @@ header nav ul li a {
 
 /* Logo styling for consistency */
 .logo {
-  width: 200px; /* Fixed width */
+  width: 150px; /* Fixed width */
   height: auto; /* Maintain aspect ratio */
   border-radius: 10px; /* Rounded corners for a polished look */
   margin-right: 20px; /* Space between the logo and the navigation */
@@ -98,15 +98,16 @@ header nav ul li a {
   padding: 50px 20px; /* Add space inside the section */
   display: flex;
   background: #d1dff6;
+  justify-content: space-between;
 }
 
 /* Hero heading styles */
 #hero h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   font-weight: 700;
   text-align: justify;
   text-transform: uppercase;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: #1f2937;
 }
 
@@ -126,7 +127,7 @@ header nav ul li a {
 
 /* Hero image styling */
 .hero-image img {
-  width: 1000px; /* Fixed width for the hero image */
+  width: 600px; /* Fixed width for the hero image */
   max-width: 100%; /* Make it responsive by not exceeding container width */
   height: auto;
   border-radius: 10px;
@@ -140,15 +141,40 @@ header nav ul li a {
 #info {
   background: #d3d3d3;
   padding: 40px 20px;
+  display: flex;
+  justify-content: space-around;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.info-grid {
+  display: flex; /* Enable Flexbox for layout */
+  flex-wrap: wrap; /* Allow items to wrap onto the next row */
+  gap: 20px; /* Add spacing between rows and columns */
+  justify-content: space-around; /* Distribute items evenly */
 }
 
 /* Info section images */
 .info-item img {
-  width: 600px; /* Large size for images */
+  width: 500px; /* Large size for images */
+
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
+.info-item {
+  flex: 1 1 300px; /* Each item will be 300px wide */
+  max-width: 300px;
+  text-align: center;
+
+  padding: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* ==========================
+   testimonial
+========================== */
 
 /* ==========================
    Footer
@@ -180,6 +206,18 @@ header nav ul li a {
   /* Make info section images responsive */
   #info .info-item img {
     width: 100%; /* Images scale to container width */
+  }
+
+  @media (max-width: 1024px) {
+    .info-item {
+      flex: 1 1 calc(50% - 20px); /* 2 items per row */
+    }
+  }
+
+  @media (max-width: 768px) {
+    .info-item {
+      flex: 1 1 100%; /* 1 item per row */
+    }
   }
 
   /* Adjust footer padding */
