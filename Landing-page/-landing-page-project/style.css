@@ -12,6 +12,7 @@
 img {
   max-width: 100%; /* Images will scale to fit their container */
   height: auto; /* Prevent distortion by maintaining proportions */
+  border: 5px solid #ffffff; /* White border for contrast */
 }
 
 / body {
@@ -95,6 +96,8 @@ header nav ul li a {
 /* Hero section padding and spacing */
 #hero {
   padding: 50px 20px; /* Add space inside the section */
+  display: flex;
+  background: #d1dff6;
 }
 
 /* Hero heading styles */
@@ -113,6 +116,12 @@ header nav ul li a {
   line-height: 1.8; /* Extra space between lines for readability */
   color: #4b5563;
   margin-top: 10px;
+}
+
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
 }
 
 /* Hero image styling */
