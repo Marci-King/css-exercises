@@ -156,9 +156,9 @@ header nav ul li a {
 
 /* Info section images */
 .info-item img {
-  width: 500px; /* Large size for images */
-
-  height: auto;
+  width: 100%; /* Fill the container width */
+  height: 200px; /* Set a fixed height */
+  object-fit: cover; /* Crop the image to fit the container */
   border-radius: 10px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -175,6 +175,29 @@ header nav ul li a {
 /* ==========================
    testimonial
 ========================== */
+
+/* Style the testimonial section's container */
+
+#testimonial {
+  background: #d1dff6;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+
+  text-transform: uppercase;
+}
+
+/* ==========================
+   CTA
+========================== */
+
+#cta {
+  background: #d3d3d3;
+  padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+}
 
 /* ==========================
    Footer
