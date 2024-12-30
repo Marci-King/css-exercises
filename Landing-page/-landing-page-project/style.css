@@ -15,7 +15,7 @@ img {
   border: 5px solid #ffffff; /* White border for contrast */
 }
 
-/ body {
+body {
   font-family: "Roboto", sans-serif;
   min-height: 100vh; /* Ensure body is at least as tall as the viewport */
 }
@@ -109,7 +109,7 @@ header nav ul li a {
   border: none; /* Remove default border */
   border-radius: 5px; /* Add rounded corners */
   cursor: pointer; /* Change cursor to pointer on hover */
-  font-size: 0.5rem; /* Button text size */
+  font-size: 1rem; /* Button text size */
 }
 
 /* Button Hover Effect */
@@ -168,7 +168,7 @@ header nav ul li a {
   display: flex; /* Enable Flexbox for layout */
   flex-wrap: wrap; /* Allow items to wrap onto the next row */
   gap: 20px; /* Add spacing between rows and columns */
-  justify-content: space-around; /* Distribute items evenly */
+  justify-content: space-between; /* Distribute items evenly */
 }
 
 /* Info section images */
@@ -184,6 +184,7 @@ header nav ul li a {
   flex: 1 1 300px; /* Each item will be 300px wide */
   max-width: 300px;
   text-align: center;
+  align-items: center;
 
   padding: 20px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -261,7 +262,7 @@ header nav ul li a {
   border: none; /* Remove default border */
   border-radius: 5px;
   cursor: pointer; /* Change cursor to pointer on hover */
-  font-size: 0.5rem;
+  font-size: 1rem;
 }
 
 /* Button Hover Effect */
@@ -274,7 +275,7 @@ header nav ul li a {
    Footer
 ========================== */
 /* Footer styles */
-#footer {
+footer {
   background: #d1dff6;
   color: white;
   text-align: center;
@@ -317,7 +318,7 @@ header nav ul li a {
   }
 
   /* Adjust footer padding */
-  #footer {
+  footer {
     padding: 10px;
   }
 }
